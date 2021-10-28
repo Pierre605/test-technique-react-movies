@@ -1,0 +1,15 @@
+.contain {
+    display: flex;
+}
+
+.jauge-likes {
+    width: 150px;
+    height: 3px;
+    background-color: black;
+}
+
+.jauge-dislikes {
+    width: 150px;
+    height: 3px;
+    background-color: rgb(156, 152, 152);
+}

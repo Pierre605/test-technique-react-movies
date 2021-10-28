@@ -61,5 +61,5 @@ const movies = [
     dislikes: 12
   },
 ]
-
-export const movies$ = new Promise((resolve, reject) => setTimeout(resolve, 100, movies))
+ export default movies
+// export const movies$ = new Promise((resolve, reject) => setTimeout(resolve, 100, movies))
