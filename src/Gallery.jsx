@@ -5,12 +5,13 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Gauge from './Gauge';
+import DeleteButton from './DeleteButton';
 
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 425,
+      width: '300px',
     },
     media: {
       height: 0,
@@ -44,12 +45,13 @@ const useStyles = makeStyles((theme) => ({
             <Card className={classes.root}>
                 <CardContent>
                     <Typography variant="h5" component="h2">
-                        {props.title}
+                        {props.movie.title}
                     </Typography>
                     <Typography color="textSecondary">
                     {props.category}
                     </Typography>
-                    <Gauge id={props.id} likes={props.likes} dislikes={props.dislikes}/>
+                    <Gauge id={props.movie.id} likes={props.movie.likes} dislikes={props.movie.dislikes}/>
+                    <DeleteButton id={props.movie.id}/>
                 </CardContent>
             </Card>
         </Grid>
